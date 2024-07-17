@@ -1,0 +1,4 @@
+services:
+  app:
+    # Prevent Rails from starting when docker starts
+    command: /bin/sh -c "while sleep 1000; do :; done"
